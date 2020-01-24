@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  react-service:
+    container_name: react-service
+    build: "."
+    ports:
+      - 4000:3000
+    volumes:
+      - "./:/app"
+    environment:
+      - NODE_ENV=development
